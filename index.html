@@ -14,55 +14,58 @@
 </head>
 
 <body>
-    <form class="form-horizontal">
-        <fieldset>
-            <!-- Form Name -->
-            <legend>Mortgage Calculator</legend>
-            <!-- Loan Balance-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="balance">Balance </label>
-                <div class="col-md-4">
-                    <input id="balance" name="balance" type="text" class="form-control input-md">
+    <div class="container-fluid">
+
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Mortgage Calculator</legend>
+                <!-- Loan Balance-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="balance">Balance </label>
+                    <div class="col-md-4">
+                        <input id="balance" name="balance" type="text" class="form-control input-md">
+                    </div>
                 </div>
-            </div>
-            <!-- Interest Rate-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="rate">Interest Rate (%)</label>
-                <div class="col-md-4">
-                    <input id="rate" name="rate" type="text" class="form-control input-md">
+                <!-- Interest Rate-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="rate">Interest Rate (%)</label>
+                    <div class="col-md-4">
+                        <input id="rate" name="rate" type="text" class="form-control input-md">
+                    </div>
                 </div>
-            </div>
-            <!-- Loan Term-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="term">Loan Term (years)</label>
-                <div class="col-md-4">
-                    <input id="term" name="term" type="text" class="form-control input-md">
+                <!-- Loan Term-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="term">Loan Term (years)</label>
+                    <div class="col-md-4">
+                        <input id="term" name="term" type="text" class="form-control input-md">
+                    </div>
                 </div>
-            </div>
-            <!-- Select Period -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="period">Period</label>
-                <div class="col-md-4">
-                    <select id="period" name="period" class="form-control">
+                <!-- Select Period -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="period">Period</label>
+                    <div class="col-md-4">
+                        <select id="period" name="period" class="form-control">
                         <option value="12">Monthly</option>
                         <option value="6">Bimonthly</option>
                     </select>
+                    </div>
                 </div>
-            </div>
-            <!-- Button -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="singlebutton"></label>
-                <div class="col-md-4">
-                    <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="button" onclick="monthlyPayment()">Calculate</button>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="singlebutton"></label>
+                    <div class="col-md-4">
+                        <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="button" onclick="monthlyPayment()">Calculate</button>
+                    </div>
                 </div>
-            </div>
-        </fieldset>
-    </form>
-    <!--p element to display the expected output-->
-    <div>
-        <p id="result"></p>
+            </fieldset>
+        </form>
+        <!--p element to display the expected output-->
+        <div>
+            <p id="result"></p>
+        </div>
+        <script src="index.js"></script>
     </div>
-    <script src="index.js"></script>
 </body>
 
 </html>

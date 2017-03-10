@@ -9,7 +9,7 @@ function monthlyPayment(){
 	var paymentPeriod = parseFloat(document.getElementById("period").value);
 
 	// monthly interest rate
-	var monthlyInterestRate = (interestRate / 100) / paymentPeriod;	 
+	var monthlyInterestRate = (interestRate / 100) / paymentPeriod;
 
 	// number of payments
 	var numberOfPayments = (loanTerm * paymentPeriod);
@@ -20,5 +20,7 @@ function monthlyPayment(){
 	//interest quotient
 	var interestQuotient = ((monthlyInterestRate * compoundedInterestRate) / (compoundedInterestRate - 1));
 
-	document.getElementById("result").innerHTML = "Your monthly payment is " + loanBalance * interestQuotient
+	var total = ( loanBalance * interestQuotient ).toFixed(2);
+
+	document.getElementById("result").innerHTML = "Your monthly payment is " + total
 };
