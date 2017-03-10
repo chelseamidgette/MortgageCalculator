@@ -20,7 +20,7 @@ function monthlyPayment(){
 	//interest quotient
 	var interestQuotient = ((monthlyInterestRate * compoundedInterestRate) / (compoundedInterestRate - 1));
 
-	var total = ( loanBalance * interestQuotient ).toFixed(2);
+	var monthlyPayment = ( loanBalance * interestQuotient ).toFixed(2);
 
-	document.getElementById("result").innerHTML = "Your monthly payment is " + total
+	document.getElementById("result").innerHTML = "Your monthly payment is " + monthlyPayment
 };
